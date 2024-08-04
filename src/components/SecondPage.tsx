@@ -65,10 +65,25 @@ const SecondPage = () => {
     );
   };
   return (
-    <div className="w-full h-auto relative py-8">
+    <div className="w-full h-auto relative py-8 flex flex-col gap-8 bg-white">
       <div className="relative">
         <div className="absolute z-10 inset-0 bg-gradient-to-l from-white via-transparent to-white" />
         <Marquee pauseOnHover className="[--duration:20s]">
+          {BrandPersonality.map((item, index) => (
+            <div
+              key={index}
+              className="w-40 h-fit sm:w-52 sm:h-fit relative grayscale"
+            >
+              <h1 className=" font-semibold text-center text-gray-500 text-lg md:text-2xl">
+                {item}
+              </h1>
+            </div>
+          ))}
+        </Marquee>
+      </div>
+      <div className="relative">
+        <div className="absolute z-10 inset-0 bg-gradient-to-l from-white via-transparent to-white" />
+        <Marquee reverse pauseOnHover className="[--duration:20s]">
           {BrandPersonality.map((item, index) => (
             <div
               key={index}

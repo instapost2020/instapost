@@ -4,6 +4,7 @@ import { Raleway } from "next/font/google";
 import localFont from "next/font/local";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import SecondPage from "./SecondPage";
 
 const bhineka = localFont({
   src: "../../public/fonts/Bhineka.ttf",
@@ -14,15 +15,21 @@ const raleway = Raleway({
 });
 const Hero = () => {
   return (
-    <main className="w-full max-w-5xl mx-auto h-auto flex flex-col justify-center gap-4  relative">
+    <main className="w-full h-auto max-w-5xl mx-auto flex flex-col justify-center gap-4  relative">
       <div
         className={`${raleway.className}  py-3 flex flex-col items-center mt-8 z-10`}
       >
         <span className="text-4xl md:text-5xl font-bold">We Are</span>
         <h1
-          className={`${bhineka.className} text-6xl md:text-8xl lg:text-9xl tracking-wider text-red-600`}
+          className={`${bhineka.className} text-6xl md:text-8xl lg:text-9xl tracking-wider pb-12 text-red-600 relative`}
         >
           Insta Post PH
+          <Image
+            src={"/blueline.png"}
+            alt="Blue"
+            fill
+            className="object-contain mt-4 md:mt-8 lg:mt-12 rotate-3"
+          />
         </h1>
         <p
           className={`${raleway.className} text-sm md:text-lg flex items-center w-full max-w-sm sm:max-w-2xl px-2 text-gray-500  mb-3`}
@@ -39,7 +46,7 @@ const Hero = () => {
         </div>
       </div>
       <div
-        className={`${raleway.className} px-2 py-2 flex flex-col md:flex-row gap-3 md:gap-6`}
+        className={`${raleway.className} px-2 py-2 flex flex-col lg:mb-12 md:flex-row gap-3 md:gap-6`}
       >
         <div
           //   initial={{
@@ -68,6 +75,9 @@ const Hero = () => {
             space, by delivering instant, high-end quality content that sells.
           </p>
         </div>
+      </div>
+      <div className="w-full h-[100%] flex flex-col justify-between mb-12">
+        <SecondPage />
       </div>
     </main>
   );

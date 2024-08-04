@@ -56,8 +56,8 @@ const Navbar = () => {
         <div
           className={
             opened
-              ? "w-[100vw] backdrop-blur-none h-[100vh] fixed md:hidden top-0 left-0 bg-white flex flex-col px-4 duration-300 transition-all ease-out  justify-end gap-4 z-50"
-              : "w-[100vw] backdrop-blur-none h-[100vh] md:hidden bg-white flex flex-col -top-[600px] left-0 fixed px-4 duration-700 transition-all ease-out justify-end gap-4 z-50"
+              ? "w-[100vw] backdrop-blur-none h-full fixed md:hidden top-0 left-0 bg-white text-black overflow-hidden flex flex-col px-4 duration-300 transition-all ease-out  justify-end gap-4 z-50"
+              : "w-[100vw] backdrop-blur-none h-full md:hidden bg-white text-black overflow-hidden flex flex-col -top-[100%] left-0 fixed px-4 duration-700 transition-all ease-out justify-end gap-4 z-50"
           }
         >
           <div className={`${raleway.className} flex flex-col gap-4`}>
