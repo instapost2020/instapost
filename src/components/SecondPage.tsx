@@ -18,6 +18,21 @@ const SecondPage = () => {
     "PROFICIENT",
   ];
 
+  const logos = [
+    "/logos/1.png",
+    "/logos/2.png",
+    "/logos/3.png",
+    "/logos/4.png",
+    "/logos/5.png",
+    "/logos/6.png",
+    "/logos/7.png",
+    "/logos/8.png",
+    "/logos/9.png",
+    "/logos/10.png",
+    "/logos/11.png",
+    "/logos/12.png",
+  ];
+
   interface MarqueeProps {
     className?: string;
     children?: ReactNode;
@@ -84,14 +99,12 @@ const SecondPage = () => {
       <div className="relative">
         <div className="absolute z-10 inset-0 bg-gradient-to-l from-white via-transparent to-white" />
         <Marquee reverse pauseOnHover className="[--duration:20s]">
-          {BrandPersonality.map((item, index) => (
+          {logos.map((item, index) => (
             <div
               key={index}
-              className="w-40 h-fit sm:w-52 sm:h-fit relative grayscale"
+              className="w-40 h-fit sm:w-72 sm:h-48 relative grayscale"
             >
-              <h1 className=" font-semibold text-center text-gray-500 text-lg md:text-2xl">
-                {item}
-              </h1>
+              <Image src={item} alt="LOGO" fill />
             </div>
           ))}
         </Marquee>

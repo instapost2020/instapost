@@ -19,6 +19,21 @@ const Flex = () => {
     "/rose.png",
   ];
 
+  const logos = [
+    "/logos/1.png",
+    "/logos/2.png",
+    "/logos/3.png",
+    "/logos/4.png",
+    "/logos/5.png",
+    "/logos/6.png",
+    "/logos/7.png",
+    "/logos/8.png",
+    "/logos/9.png",
+    "/logos/10.png",
+    "/logos/11.png",
+    "/logos/12.png",
+  ];
+
   const Bottom = [
     "/rose.png",
     "/rose.png",
@@ -44,18 +59,18 @@ const Flex = () => {
     "/rose.png",
   ];
   return (
-    <div className="grid w-full py-12 relative">
-      <Image
+    <div className="grid bg-white w-full py-12 relative">
+      {/* <Image
         src={"/background.png"}
         fill
         className="object-cover fixed top-0 left-0 z-0"
         alt="BG"
-      />
+      /> */}
       {/* Upper */}
       <div className="w-full flex flex-col lg:flex-row justify-between py-4 px-4">
         <div className="py-8 w-full max-w-lg md:max-w-xl">
           <div
-            className={`${raleway.className} px-4 sm:px-12 mt-12 uppercase font-bold text-slate-700 text-4xl sm:text-5xl md:text-6xl`}
+            className={`${raleway.className} px-4 sm:px-12 mt-12 uppercase font-bold text-blue-800 text-4xl sm:text-5xl md:text-6xl`}
           >
             <motion.h1
               initial={{
@@ -159,7 +174,7 @@ const Flex = () => {
 
       {/* {/* Bottom  */}
       <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-6 w-full h-full relative px-4 space-y-4">
-        {Bottom.map((item, index) => (
+        {logos.map((item, index) => (
           <motion.div
             initial={{
               scale: 0,
@@ -170,7 +185,7 @@ const Flex = () => {
                 duration: 0.4,
               },
             }}
-            className="border border-gray-800 w-full h-52 relative"
+            className="border border-gray-800 rounded-xl w-full h-52 relative"
             key={index}
           >
             <Image fill src={item} alt="Logo" className="object-contain" />

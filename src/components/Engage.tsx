@@ -88,9 +88,9 @@ const Engage = () => {
             to social media management and influencer partnerships.
           </p>
 
-          <h1 className="bg-gray-100 text-blue-500 w-full max-w-2xl mx-auto py-2 px-2 rounded-md flex flex-col gap-3">
+          <h1 className="bg-gray-100 text-blue-700 w-full max-w-2xl mx-auto py-2 px-2 rounded-md flex flex-col gap-3">
             <p className={`${custom ? "line-clamp-3" : "line-clamp-none"}`}>
-              <span className="font-bold text-blue-500 uppercase text-lg">
+              <span className="font-bold text-blue-700 uppercase text-lg">
                 Customized Strategies -
               </span>
               Tailoring our approach to meet the unique needs and goals of each
@@ -105,9 +105,9 @@ const Engage = () => {
               {custom ? "Read more..." : "Read less..."}
             </span>
           </h1>
-          <h1 className="bg-gray-100 text-blue-500 w-full max-w-2xl mx-auto py-2 px-2 rounded-md flex flex-col gap-3">
+          <h1 className="bg-gray-100 text-blue-700 w-full max-w-2xl mx-auto py-2 px-2 rounded-md flex flex-col gap-3">
             <p className={`${except ? "line-clamp-3" : "line-clamp-none"}`}>
-              <span className="font-bold text-blue-500 uppercase text-lg">
+              <span className="font-bold text-blue-700 uppercase text-lg">
                 Exceptional Support -
               </span>
               Providing ongoing support and clear communication ensures clients

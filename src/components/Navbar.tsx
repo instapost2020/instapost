@@ -19,25 +19,25 @@ const Navbar = () => {
           </div>
           <div className={`${raleway.className} text-md gap-4 hidden md:flex `}>
             <Link
-              className="hover:text-red-600 duration-200 transition-all ease-in"
+              className="hover:text-red-600 hover:-mt-1 duration-200 transition-all ease-in"
               href={"/"}
             >
               HOME
             </Link>
             <Link
-              className="hover:text-red-600 duration-200 transition-all ease-in"
+              className="hover:text-red-600 hover:-mt-1 duration-200 transition-all ease-in"
               href={"/"}
             >
               ABOUT
             </Link>
             <Link
-              className="hover:text-red-600 duration-200 transition-all ease-in"
+              className="hover:text-red-600  hover:-mt-1 duration-200 transition-all ease-in"
               href={"/"}
             >
               WORKS
             </Link>
             <Link
-              className="hover:text-red-600 duration-200 transition-all ease-in"
+              className="hover:text-red-600 hover:-mt-1 duration-200 transition-all ease-in"
               href={"/"}
             >
               SOCIAL MEDIA
