@@ -2,7 +2,9 @@ import Image from "next/image";
 import React from "react";
 import { Raleway } from "next/font/google";
 import { Badge } from "./ui/badge";
-import { Facebook } from "lucide-react";
+import { FaInstagram, FaFacebook } from "react-icons/fa6";
+import { HeartOff } from "lucide-react";
+import Link from "next/link";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -75,7 +77,7 @@ const Team = () => {
     {
       photo: "/team/jasyellow.jpg",
       name: "Jason Gotangho",
-      position: ["Video Editor", "Sales"],
+      position: ["Video Editor | ", "Sales"],
       facebook: "https://www.facebook.com/jasongerald.gotangho",
       instagram: "https://www.instagram.com/gotangho/",
     },
@@ -100,9 +102,6 @@ const Team = () => {
               {item.name}
             </h1>
             <div className="w-full justify-between">
-              <Badge className="bg-red-600">
-                {item.position.map((pos) => pos)}
-              </Badge>
               <Badge className="bg-red-600">
                 {item.position.map((pos) => pos)}
               </Badge>

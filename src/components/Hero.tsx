@@ -28,7 +28,7 @@ const Hero = () => {
             src={"/blueline.png"}
             alt="Blue"
             fill
-            className="object-contain mt-4 md:mt-8 lg:mt-12 rotate-3"
+            className="object-contain mt-4 md:mt-8 lg:mt-12 rotate-3 "
           />
         </h1>
         <p

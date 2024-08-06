@@ -50,7 +50,11 @@ const Navbar = () => {
           </Button>
         </div>
         {/* MOBILE NAV */}
-        <Button className="flex md:hidden" onClick={() => setOpened(!opened)}>
+        <Button
+          variant={"ghost"}
+          className="flex md:hidden"
+          onClick={() => setOpened(!opened)}
+        >
           MENU
         </Button>
         <div
